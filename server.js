@@ -23,7 +23,7 @@ app.set('views-engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
 app.use(flash());
 app.use(session({
-    secret: process.env.Sessions_SECRET,
+    secret: process.env.SESSIONS_SECRET,
     resave: false,
     saveUninitialized: false,
 }));
